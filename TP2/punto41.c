@@ -3,8 +3,8 @@ int main(){
         int canta=0, cante= 0, canti= 0, canto= 0,cantu= 0 , cantt= 0;
 	    char car;
 
-	  printf("Ingrese una oracion:  \n");
-	   scanf("%c",&car);
+	    printf("Ingrese una oracion:  \n");
+	    scanf("%c",&car);
 
 	while(car != '.') {
 		if (car == 'a')
