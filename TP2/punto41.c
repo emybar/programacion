@@ -3,10 +3,10 @@ int main(){
         int canta=0, cante= 0, canti= 0, canto= 0,cantu= 0 , cantt= 0;
 	    char car;
 
-	    printf("Ingrese una oracion:  \n");
+	    printf("Ingrese una oracion:  \n");  // ACLARÁ QUE TERMINADA EN PUNTO
 	    scanf("%c",&car);
 
-	while(car != '.') {
+	while(car != '.') {		// NO CONTEMPLÁS MAYÚSCULAS
 		if (car == 'a')
 			canta = canta + 1;
 		if (car == 'e')
