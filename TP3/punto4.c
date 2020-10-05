@@ -47,7 +47,7 @@ int main (){
             scanf("%d",&anio);
         }
             return 0 ;
-        }
+}
 
         
 bool es_bisiesto (int anio){
