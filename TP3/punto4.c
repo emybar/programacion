@@ -26,36 +26,43 @@ if (anio%4==0 && anio%100 !=0 || anio%400==0){
 ///////////////////////////////////
 /*/
 
-
 #include <stdio.h>
 #include <stdbool.h>
 
 bool es_bisiesto(int anio);
 
-int main (){
-    int anio=0;
-        printf("Ingrese un anio : \n");
-            scanf("%d",&anio);
-        while(anio>999){
-            if(es_bisiesto(anio)==1){
+int main()
+{
+    int anio = 0;
+    printf("Ingrese un anio : \n"); // aclará que si ingresa un año menor que 1000 termina
+    scanf("%d", &anio);
+    while (anio > 999)
+    {
+        if (es_bisiesto(anio) == 1)
+        { 
+            // en las funciones de tipo bool, que en realidad son int 
+            // podés poner if(es_bisiesto(anio))
             printf("Es un anio bisiesto %d \n", anio);
-            }else{
+        }
+        else
+        {
             printf("No es un anio bisiesto %d \n", anio);
-            
         }
-        printf("Ingrese un anio : \n");
-            scanf("%d",&anio);
-        }
-            return 0 ;
+        printf("Ingrese un anio : \n"); 
+        scanf("%d", &anio);
+    }
+    return 0;
 }
 
-        
-bool es_bisiesto (int anio){
+bool es_bisiesto(int anio)
+{
 
-    if (anio%4==0 && anio% 100 !=0 || anio%400==0){
+    if (anio % 4 == 0 && anio % 100 != 0 || anio % 400 == 0)
+    {
         return 1;
-    }else{
-        return 0 ;
-    
+    }
+    else
+    {
+        return 0;
     }
 }

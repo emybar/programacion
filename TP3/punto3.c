@@ -42,12 +42,12 @@ int main(){
     printf("Ingrese una oracion \n");
 	scanf("%c",&carac);
 
-    printf("%c",transformar(carac));
-	scanf("%c",&carac);
+    printf("%c", transformar(carac)); // Si la función es void se llama directamente transformar(carc);
+    scanf("%c",&carac);  // Esta lectura no es necesaria
     return 0 ;
 }
 
-char transformar(char carac){
+char transformar(char carac){  // la función tiene que ser del tipo void ya que imprimís desde ella
     int nroletra = 0;
     while(carac !='.') {
         if(nroletra == 0 && es_vocal(carac) ) {
