@@ -33,10 +33,10 @@ Hacer n veces (i=1....n)
 bool es_perfecto (int n);
 
 int main() {
-        int i=0,n=0, sum=0; 
+        int i=0, n=0, sum=0; // Para qué declarás i y sum? acá no se usan
         for(n = 1; n < 100; n++){
-		if(es_perfecto (n) == 1){
-                        printf(" Es un numero perfecto %d", n);
+		if(es_perfecto (n) == 1){ 
+                        printf("\n Es un numero perfecto %d", n);
                 }else{
                         printf(" \n No es un numero perfecto %d ",n);
                 }
@@ -44,6 +44,8 @@ int main() {
         return 0; 
 }
 
+// Fijate que la función esta no es lo que tenés en el pseudocódigo
+// Esta funciona bien. En el pseudocódigo no habías ido sumando los divisores
 
 bool es_perfecto (int n){
         int i=0,sum=0 ;
@@ -51,7 +53,7 @@ bool es_perfecto (int n){
                 if(n % i == 0)
     	            sum += i;
         }
-        if (sum==i){
+        if (sum==i){  // acá es más común comparar contra n, aunque i llega al mismo valor
                 return 1;
         }else{
                 return 0; 
