@@ -7,7 +7,8 @@
 
 int main(){
 
-    char dato1[MIN ],dato2[MIN], datoscom[MAX], i=0 , j=0 ; 
+    char dato1[MIN ],dato2[MIN], datoscom[MAX];
+    int i=0 , j=0 ; 
         printf("Ingrese Nombre: ");
         gets(dato1);
         printf("Ingrese Apellido:");

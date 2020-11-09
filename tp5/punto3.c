@@ -41,6 +41,7 @@ void max_val(float arre[], int *longit) {
 			max = arre[j];
 		j++;
 	}
+
 	printf("El valor maximo es: %f \n",max);
 }
 
@@ -58,13 +59,15 @@ void min_val(float *arre, int longit) {
 }
 
 float promedio(float arre[], int longit) {
+	
 	int j = 0;
 	float prom = 0;
 	while(j <= longit) {
 		prom = prom + arre[j];
 		j++;
 	}
-	return prom = prom/longit;
+	
+	return prom=prom/j;
 }
 
 void sobre_prom(float arre[], int longit) {
