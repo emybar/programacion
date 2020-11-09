@@ -2,9 +2,20 @@
 
 void min_val(float *arre, int longit);
 void max_val(float arre[], int *longit);
+// La cantidad de elementos del arreglo, que la pedís por anticipado
+// no la querés modificar, por lo que nunca te conviene pasar como puntero
+
 float promedio(float arre[], int longit);
 void sobre_prom(float arre[], int longit);
 
+// Cuando trabajás con arreglos en general es más claro pasarte la cantidad
+// de elementos, y después trabajar con < y no con <=
+// Esto es lo que te llevó al error en el promedio. Estás dividiendo por
+// un elemento menos. Yo lo probé con 3 elementos, 1, 2, 3 y me da de promedio 3
+// 1+2+3=6, 6/2=3
+// Además por lo general cuando una función calcula algo, como el máximo, el mínimo
+// o el promedio devolvelo y no lo muestres por pantalla. Mostralo después desde
+// el programa principal
 
 int main(){
     int i = 0, cant ;

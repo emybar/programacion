@@ -2,7 +2,7 @@
 
 int main(){
 
-   int num[5];
+    int num[5];
     char letra[5];
     char cad[10];
     char *p_letra ;

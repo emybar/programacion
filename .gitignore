@@ -30,3 +30,7 @@
 *.exe
 *.out
 *.app
+TP2/.vscode/launch.json
+TP2/.vscode/tasks.json
+TP2/.vscode/*
+.gitignore

@@ -1,7 +1,8 @@
 #include <stdio.h>
 
 #define TAMA 200
-
+// Te faltó hacer la modificación para vectores de distintos tamaños y distintos 
+// valores del múltiplo
 int main(){
 
 int i , vectorNumero[TAMA] , cont=0;
