@@ -14,7 +14,7 @@ struct FECHA
 struct MEDICAMENTO
 {
     char nomb_rem [50];
-    char forma_farma [50];
+    char forma_farma [50]; // se nota el estudio de medicina
     char laborato [50];
     float precio_lista ;
     int stock;
@@ -58,7 +58,7 @@ fflush(stdin);
 puts("Ingrese el stock: ");
 scanf("%d", &pmedi->stock);
 fflush(stdin);
-
+// no hacés ningún control que la fecha sea válida. Acá no lo especifica, pero en un parcial o trabajo final preguntá si es necesario
 puts("Ingrese el dia del vencimiento: ");
 scanf("%d", &pmedi->venci.dia);
 
